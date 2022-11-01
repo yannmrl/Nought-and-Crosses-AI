@@ -1,0 +1,56 @@
+.grille {
+    padding: 0;
+    width: 100vh;
+    height: 100%;
+    position: absolute;
+}
+
+.line {
+    display: flex;
+    padding: 0;
+    width: 100vh;
+}
+
+.column {
+    padding: 0;
+    width: 100vh;
+    height: 100%;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blinkJ {
+    animation: blinkJ-animation 0.2s steps(60, start) infinite;
+    -webkit-animation: blinkJ-animation 0.2s steps(60, start) infinite;
+}
+
+@keyframes blinkJ-animation {
+    to {
+        background-color: #9AFF41;
+    }
+}
+
+@-webkit-keyframes blinkJ-animation {
+    to {
+        background-color: #9AFF41;
+    }
+}
+
+.blinkB {
+    animation: blinkB-animation 0.2s steps(60, start) infinite;
+    -webkit-animation: blinkB-animation 0.2s steps(60, start) infinite;
+}
+
+@keyframes blinkB-animation {
+    to {
+        background-color: #414DFF;
+    }
+}
+
+@-webkit-keyframes blinkB-animation {
+    to {
+        background-color: #414DFF;
+    }
+}
